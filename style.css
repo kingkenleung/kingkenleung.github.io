@@ -1,37 +1,83 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 0;
-	background: #000;
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    background: #000;
 }
 
 #container {
-  width: 100%;
-  height: 100%;
-	background: #000;
+    width: 100%;
+    height: 100%;
+    background: #000;
 }
 
 #progress {
-	width: 0;
-	height: 5px;
-	position: fixed;
-	top: 0;
-	background: #fff;
-	-webkit-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease;
+    width: 0;
+    height: 5px;
+    position: fixed;
+    top: 0;
+    background: #fff;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
 }
 
 #progress.finish {
-	opacity: 0;
+    opacity: 0;
 }
 
 #panel {
- 	max-width: 500px;
-	max-height: 500px;
-	background: #000;
-	color: #000;
-	border-radius: 3px;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
+    max-width: 500px;
+    max-height: 500px;
+    background: #000;
+    color: #000;
+    border-radius: 3px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px 0;
+  /* z-index: 4; */
+}
+.btn:hover {
+  background-color: #e8e8e8;
+}
+.btn:active {
+  color: #000;
+  background-color: #a6a6a6;
+}
+
+#directory-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  right: 15px;
+  max-height: calc(100vh - 100px);
+  width: 50px;
+  padding: 5px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 3;
+}
+#menu {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  z-index: 3;
+}
+
+.hide {
+  display: none !important;
 }
