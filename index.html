@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>SPYC Virtual Tour</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r105/three.min.js"></script>
-	<script src="panolens.min.js"></script> 
-	<script src="scenes.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>SPYC Virtual Tour</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r105/three.min.js">
 
-</head>
+        </script>
+        <script src="panolens.min.js">
 
-<body>
-	<div id="progress"></div>
-	<div id="container"></div>
-	<div id="panel" style="display: none; top: 0px; position: absolute;" class="panolens-infospot">
-		<iframe id="hoverFrame"></iframe>
-	</div>
+        </script>
+        <script src="scenes.js">
 
-	
-	<script src="script.js"></script>
-</body>
+        </script>
+
+    </head>
+
+    <body>
+        <div id="container">
+          <div id="progress"></div>
+        </div>
+        <i id="menu" class="material-icons" role="button">menu</i>
+        <div id="directory-container" class="hide">
+          <button class="btn" id="btn1" data-destination="lt1">地下</button>
+          <button class="btn" id="btn2" data-destination="lt2">一樓</button>
+          <button class="btn" id="btn3" data-destination="">二樓</button>
+          <button class="btn" id="btn4" data-destination="">三樓</button>
+          <button class="btn" id="btn5" data-destination="">四樓</button>
+          <button class="btn" id="btn6" data-destination="">五樓</button>
+        </div>
+        <div id="panel" style="display: none; top: 0px; position: absolute;" class="panolens-infospot">
+            <iframe id="hoverFrame"></iframe>
+        </div>
+
+
+
+        <script src="script.js"></script>
+    </body>
 
 </html>
